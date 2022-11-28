@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage ('artifact deploy') {
 			steps {
-				sh '''cp /target/*.war /mnt/servers/apache-tomcat-9.0.69/webapps/project.war
+				sh '''cp target/*.war /mnt/servers/apache-tomcat-9.0.69/webapps/project.war
 				'''
 			}
 		}
